@@ -1,4 +1,5 @@
-This script configures your **Kali Linux machine as a network router** for the suricata-wazuh-c2-detection lab. It enables internet access for your internal VMs by routing traffic through Kali.
+# 🔁  Kali VM NAT & IP Forwarding Script
+This script configures your Kali Linux machine as a network router for the suricata-wazuh-c2-detection lab. It enables internet access for your internal VMs by routing their traffic through Kali, which will later allow Suricata to monitor and analyze that traffic effectively.
 
 ---
 
