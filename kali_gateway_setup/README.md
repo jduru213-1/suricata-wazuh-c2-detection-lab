@@ -31,7 +31,7 @@ These interfaces are **predefined for this lab**. No modifications are necessary
 ---
 
 ## 🚀 Usage
-From your Kali VM
+From your Kali VM:
 
 ```bash
 cd kali_gateway_setup
