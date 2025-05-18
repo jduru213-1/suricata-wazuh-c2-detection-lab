@@ -1,4 +1,4 @@
-# Suricata-Wazuh C2 Detection Lab 🚨🔍
+# Suricata-Wazuh C2 Detection Lab 🚨
 
 [![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)  
 [![GitHub issues](https://img.shields.io/github/issues/jduru213-1/suricata-wazuh-c2-detection-lab)](https://github.com/jduru213-1/suricata-wazuh-c2-detection-lab/issues)  
