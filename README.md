@@ -22,10 +22,11 @@ Before running the scripts here, ensure your lab VM infrastructure is ready. For
 
 ## 🛠️ Included Scripts and Setup Order
 
-| Step | Script                     | Description                                               |
-|-------|----------------------------|-----------------------------------------------------------|
-| 1     | `setup_kali_gateway.sh`    | Configures Kali Linux as a gateway for lab network routing |
-| 2     | `suricata_lab_setup.sh`    | Installs and configures Suricata IDS with Emerging Threats rules |
+| Step | Script                                          | Description                                               |
+|-------|------------------------------------------------|-----------------------------------------------------------|
+| 1     | [`kali_gateway_setup`](kali_gateway_setup/) | Configures Kali Linux as a gateway for lab network routing |
+| 2     | [`suricata_setup`](suricata_setup/)     | Installs and configures Suricata IDS with Emerging Threats rules |
+
 
 ---
 
