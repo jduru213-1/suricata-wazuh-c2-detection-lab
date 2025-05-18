@@ -18,6 +18,9 @@ echo "[+] Extracting rules..."
 sudo tar -xzvf emerging.rules.tar.gz
 sudo rm emerging.rules.tar.gz
 
+echo "[+] Creating custom rule to detect ICMP ping traffic..."
+echo 'alert icmp any any -> any any (msg:"ICMP Ping Detected"; sid:1000001; rev:1; classtype:icmp-event; metadata:attack_target Host, protocol ICMP;)' | sudo tee /etc/suricata/rules/icmp-ping.rules
+
 echo "[+] Uncommenting all 'alert' rules..."
 sudo find . -type f -name "*.rules" -exec sed -i 's/^#\s*alert/alert/' {} \;
 echo "[+] Setting default-rule-path to /etc/suricata/rules in suricata.yaml..."
