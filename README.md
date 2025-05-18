@@ -4,7 +4,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/jduru213-1/suricata-wazuh-c2-detection-lab)](https://github.com/jduru213-1/suricata-wazuh-c2-detection-lab/issues)  
 [![GitHub stars](https://img.shields.io/github/stars/jduru213-1/suricata-wazuh-c2-detection-lab)](https://github.com/jduru213-1/suricata-wazuh-c2-detection-lab/stargazers)  
 
----
+
 
 ## 📖 Overview
 
@@ -31,12 +31,11 @@ Before running the scripts here, ensure your lab VM infrastructure is ready. For
 
 ## 🏃‍♂️ How to Use
 
+**Note:** Use these scripts as referenced in the setup guide.
+
 Clone the repository:
 
 ```bash
 git clone https://github.com/jduru213-1/suricata-wazuh-c2-detection-lab.git
 cd suricata-wazuh-c2-detection-lab
 
-
-# (Optional) Run Kali gateway setup
-sudo bash setup_kali_gateway.sh
