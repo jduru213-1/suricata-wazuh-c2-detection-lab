@@ -8,36 +8,35 @@
 
 ## 📖 Overview
 
-This repository contains automation scripts to help set up and configure components for detecting malicious C2 server traffic in phishing attack simulations using Google Calendar phishing and Wazuh for monitoring.
+This repository contains automation scripts for setting up a lab environment to detect malicious C2 server traffic in phishing attack simulations, using Google Calendar phishing, Wazuh, and Suricata.
 
 ---
 
-## 📂 Included Scripts
+## ⚙️ Phase 1: VM Infrastructure Setup (Prerequisites)
 
-| File                       | Description                                            |
-| -------------------------- | ------------------------------------------------------|
-| `suricata_lab_setup.sh`    | Bash script to install and configure Suricata with Emerging Threats rules |
-| `setup_kali_gateway.sh`    | Bash script to configure Kali Linux as a gateway for lab network traffic routing |
+Before running the scripts here, ensure your lab VM infrastructure is ready. For detailed instructions on VM setup and configuration, please check the associated blog post:
+
+[**Lab Infrastructure Setup Blog (Coming Soon)**](#)  
 
 ---
 
-## 🛠️ Usage
+## 🛠️ Included Scripts and Setup Order
 
-### Prerequisites
+| Step | Script                     | Description                                               |
+|-------|----------------------------|-----------------------------------------------------------|
+| 1     | `setup_kali_gateway.sh`    | Configures Kali Linux as a gateway for lab network routing |
+| 2     | `suricata_lab_setup.sh`    | Installs and configures Suricata IDS with Emerging Threats rules |
 
-- Ubuntu or Debian-based Linux system  
-- sudo privileges  
+---
 
-### Setup
+## 🏃‍♂️ How to Use
 
-Clone the repo and run the setup scripts as needed:
+Clone the repository:
 
 ```bash
 git clone https://github.com/jduru213-1/suricata-wazuh-c2-detection-lab.git
 cd suricata-wazuh-c2-detection-lab
 
-# Run Suricata setup
-sudo bash suricata_lab_setup.sh
 
 # (Optional) Run Kali gateway setup
 sudo bash setup_kali_gateway.sh
