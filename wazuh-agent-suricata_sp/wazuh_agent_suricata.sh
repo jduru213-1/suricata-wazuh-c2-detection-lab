@@ -31,6 +31,11 @@ sudo WAZUH_MANAGER="$WAZUH_MANAGER" apt-get install -y wazuh-agent
 echo "[+] Backing up ossec.conf..."
 sudo cp "$OSSEC_CONF" "$OSSEC_CONF.bak"
 
+echo "[+] Updating <address> in ossec.conf to $WAZUH_MANAGER ..."
+sudo sed -i "s|<address>.*</address>|<address>$WAZUH_MANAGER</address>|" "$OSSEC_CONF"
+
+echo "[+] Checking if Suricata eve.json log is already configured..."
+
 echo "[+] Checking if Suricata eve.json log is already configured..."
 if sudo grep -q "$SURICATA_LOG" "$OSSEC_CONF"; then
     echo "[!] Suricata log is already present in ossec.conf."
