@@ -1,6 +1,6 @@
 # 🔐 Block, Unblock & Host Isolation Scripts for Lab Traffic Control
 
-These scripts were created (except for `isolate_host.cmd` for our lab environment to manually isolate malicious traffic between virtual machines. This was necessary due to issues automating the response using **Wazuh Active Responses**. They provide a quick and flexible way to block, unblock, or isolate hosts during investigations.
+These scripts were created (except for `isolate_host.cmd`) for our lab environment to manually isolate malicious traffic between virtual machines. This was necessary due to issues automating the response using **Wazuh Active Responses**. They provide a quick and flexible way to block, unblock, or isolate hosts during investigations.
 
 ---
 
