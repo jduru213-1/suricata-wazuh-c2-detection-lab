@@ -23,13 +23,13 @@ Before running the scripts here, please ensure your lab VM infrastructure is rea
 ## 🛠️ Included Scripts and Setup Order
 
 - sp = setup
-
-| Step | Script                                          | Description                                               |
-|-------|------------------------------------------------|-----------------------------------------------------------|
-| 1     | [`kali_gateway_sp`](kali_gateway_setup/) | Configures Kali Linux as a gateway for lab network routing |
-| 2     | [`suricata_sp`](suricata_setup/)     | Installs and configures Suricata IDS with Emerging Threats rules |
-| 3     | [`Wazuh-agent-suricata_sp`](Wazuh-agent-suricata_sp/)     | Installs and configures Suricata IDS with Emerging Threats rules |
-| 4     | [`response_scripts`](response_scripts/)     | Installs and configures Suricata IDS with Emerging Threats rules |
+  
+| Step | Script                                          | Description                                                                                          |
+|------|------------------------------------------------|----------------------------------------------------------------------------------------------------|
+| 1    | [`kali_gateway_sp`](kali_gateway_sp/)           | Configures Kali Linux as a NAT gateway to route and inspect lab traffic                            |
+| 2    | [`suricata_sp`](suricata_sp/)                   | Installs and configures Suricata IDS with Emerging Threats rules                                   |
+| 3    | [`wazuh-agent-suricata_sp`](wazuh-agent-suricata_sp/) | Installs and configures the Wazuh agent to collect and forward Suricata logs                       |
+| 4    | [`response_scripts`](response_scripts/)         | Contains scripts to block/unblock malicious traffic and isolate Windows hosts during incident response |
 
 
 ---
