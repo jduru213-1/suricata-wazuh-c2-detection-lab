@@ -8,8 +8,8 @@ This script configures your Kali Linux machine as a network router for the suric
 - Enables **IP forwarding** for packet routing
 - Configures **NAT (masquerading)** on `eth2` (internet-facing interface)
 - Allows traffic forwarding:
-  - From `vmnet1` (Windows 10 Machine (Hacker)) → `eth2`
-  - From `vmnet2` (Windows Server 2022 (Victim) or Kali VM) → `eth2`
+  - From `vmnet1` (Windows 10 Machine (Hacker)) → `eth0`
+  - From `vmnet2` (Windows Server 2022 (Victim) or Kali VM) → `eth1`
 - Saves **iptables rules** to persist after reboot
 
 ---
