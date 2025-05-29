@@ -14,7 +14,7 @@ This repository contains automation scripts for setting up a lab environment to 
 
 ## ⚙️ Phase 1: VM Infrastructure Setup (Prerequisites)
 
-Before running the scripts here, ensure your lab VM infrastructure is ready. For detailed instructions on VM setup and configuration, please check the associated blog post:
+Before running the scripts here, please ensure your lab VM infrastructure is ready. For detailed instructions on VM setup and configuration, please check the associated blog post:
 
 [**Lab Infrastructure Setup Blog (Coming Soon)**](#)  
 
@@ -22,10 +22,14 @@ Before running the scripts here, ensure your lab VM infrastructure is ready. For
 
 ## 🛠️ Included Scripts and Setup Order
 
+- sp = setup
+
 | Step | Script                                          | Description                                               |
 |-------|------------------------------------------------|-----------------------------------------------------------|
-| 1     | [`kali_gateway_setup`](kali_gateway_setup/) | Configures Kali Linux as a gateway for lab network routing |
-| 2     | [`suricata_setup`](suricata_setup/)     | Installs and configures Suricata IDS with Emerging Threats rules |
+| 1     | [`kali_gateway_sp`](kali_gateway_setup/) | Configures Kali Linux as a gateway for lab network routing |
+| 2     | [`suricata_sp`](suricata_setup/)     | Installs and configures Suricata IDS with Emerging Threats rules |
+| 3     | [`Wazuh-agent-suricata_sp`](Wazuh-agent-suricata_sp/)     | Installs and configures Suricata IDS with Emerging Threats rules |
+| 4     | [`response_scripts`](response_scripts/)     | Installs and configures Suricata IDS with Emerging Threats rules |
 
 
 ---
