@@ -1,4 +1,9 @@
-#!/bin/bash
+#!/bin/bash 
+
+echo "                                                       "
+echo "-------------------------------------------------------"
+echo "  Wazuh agent installation  & Suricata to Wazuh Config "
+echo "-------------------------------------------------------" 
 set -e
 
 # Prompt for Wazuh Manager IP or hostname

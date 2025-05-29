@@ -1,5 +1,11 @@
 #!/bin/bash
 
+echo "                                "
+echo "--------------------------------"
+echo "Suricata Lab Setup/Installation "
+echo "--------------------------------"
+echo "                                " 
+
 set -e
 
 echo "[+] Installing Suricata..."
@@ -15,11 +21,11 @@ echo "[+] Downloading Emerging Threats Open-Source Rules..."
 sudo wget https://rules.emergingthreats.net/open/suricata-6.0/emerging.rules.tar.gz
 
 echo "[+] Extracting rules..."
-sudo tar -xzvf emerging.rules.tar.gz
+sudo tar -xzvf emerging.rules.tar.gz -C /etc/suricata/rules --strip-components=1
 sudo rm emerging.rules.tar.gz
 
 echo "[+] Creating custom rule to detect ICMP ping traffic..."
-echo 'alert icmp any any -> any any (msg:"ICMP Ping Detected"; sid:1000001; rev:1; classtype:icmp-event; metadata:attack_target Host, protocol ICMP;)' | sudo tee /etc/suricata/rules/icmp-ping.rules
+echo 'alert icmp any any -> any any (msg:"ICMP Ping Detected"; sid:1000001; rev:1; classtype:icmp-event; metadata:attack_target Host, protocol ICMP, count 5, seconds 10;)' | sudo tee /etc/suricata/rules/icmp-ping.rules
 
 echo "[+] Uncommenting all 'alert' rules..."
 sudo find . -type f -name "*.rules" -exec sed -i 's/^#\s*alert/alert/' {} \;
@@ -29,7 +35,7 @@ echo "[+] Setting default-rule-path to /etc/suricata/rules in suricata.yaml..."
 sudo sed -i 's|^default-rule-path:.*|default-rule-path: /etc/suricata/rules|' /etc/suricata/suricata.yaml
 
 echo "[+] Preparing list of rule files..."
-rules_list=$(ls /etc/suricata/rules/*.rules | sed 's|.*/||' | grep -Ev 'dnp3-events.rules|modbus-events.rules|app-layer-events.rules|files.rules|decoder-events.rules' | sed 's/^/  - /')
+rules_list=$(ls /etc/suricata/rules/*.rules | sed 's|.*/||' | grep -Ev 'dnp3-events.rules|modbus-events.rules|app-layer-events.rules|files.rules|decoder-events.rules|emerging-deleted.rules' | sed 's/^/  - /')
 
 echo "[+] Updating suricata.yaml rule-files section..."
 sudo sed -i '/^rule-files:/,/^[^[:space:]]/d' /etc/suricata/suricata.yaml
