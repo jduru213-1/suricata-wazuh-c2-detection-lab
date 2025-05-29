@@ -7,9 +7,8 @@ This script automates the installation and configuration of **Suricata** as an I
 ## ✅ What This Script Does
 
 - Installs Suricata and required tools
-- Creates a Suricata rules directory at `/etc/suricata/rules`
+- Creates a local Suricata rules directory at `/etc/suricata/rules/local`
 - Downloads and extracts the **Emerging Threats ruleset**
-- Activates all `alert` rules for detection
 - Updates `suricata.yaml` to:
   - Set default rule path
   - Add all valid rule files
