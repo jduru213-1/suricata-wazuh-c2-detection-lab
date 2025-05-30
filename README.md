@@ -9,7 +9,7 @@
 
 This repository contains automation scripts to help build a lab environment for simulating a phishing attack that delivers malicious C2 server traffic via Google Calendar, with detection and response powered by Wazuh and Suricata.
 
-***Note:*** Assistance was provided by OpenAI's ChatGPT to develop automation scripts designed to help others follow along with the project and avoid manually typing commands line by line.
+- Note: Assistance was provided by OpenAI's ChatGPT to develop automation scripts designed to help others follow along with the project and avoid manually typing commands line by line.
 ---
 
 ## ⚙️ Phase 1: VM Infrastructure Setup (Prerequisites)
