@@ -37,5 +37,6 @@ This script automates the installation and configuration of **Suricata** as an I
 From your Kali VM:
 
 ```bash
-cd suricata_setup
-sudo ./suricata_lab_setup.sh
+git clone https://github.com/jduru213-1/suricata-wazuh-c2-detection-lab.git
+cd suricata_sp
+sudo ./suricata_env_setup.sh
