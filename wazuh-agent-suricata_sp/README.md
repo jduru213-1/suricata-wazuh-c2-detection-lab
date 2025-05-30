@@ -36,6 +36,7 @@ This setup script (`wazuh-agent-suricata.sh`) automates the installation and con
 ## 🚀 Usage
 
 ```bash
+cd wazuh-agent-suricata_sp
 chmod +x wazuh-agent-suricata.sh
 sudo ./wazuh-agent-suricata.sh
 
