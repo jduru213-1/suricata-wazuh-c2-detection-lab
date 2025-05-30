@@ -8,7 +8,7 @@
 
 ## 📖 Overview
 
-This repository contains automation scripts to build a lab environment for simulating a phishing attack that delivers malicious C2 server traffic via Google Calendar, with detection and response powered by Wazuh and Suricata.
+This repository contains automation scripts to help build a lab environment for simulating a phishing attack that delivers malicious C2 server traffic via Google Calendar, with detection and response powered by Wazuh and Suricata.
 
 ---
 
