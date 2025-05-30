@@ -16,7 +16,7 @@ This repository contains automation scripts to help build a lab environment for 
 
 Before running the scripts here, please ensure your lab VM infrastructure is ready. For detailed instructions on VM setup and configuration, please check the associated blog post:
 
-[**Lab Infrastructure Setup Blog (Coming Soon)**](#)  
+- [**Lab Infrastructure Setup Blog (Coming Soon)**](#)  
 
 ---
 
