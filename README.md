@@ -4,6 +4,8 @@
 [![GitHub issues](https://img.shields.io/github/issues/jduru213-1/suricata-wazuh-c2-detection-lab)](https://github.com/jduru213-1/suricata-wazuh-c2-detection-lab/issues)  
 [![GitHub stars](https://img.shields.io/github/stars/jduru213-1/suricata-wazuh-c2-detection-lab)](https://github.com/jduru213-1/suricata-wazuh-c2-detection-lab/stargazers)  
 
+Note: Assistance was provided by OpenAI's ChatGPT to develop automation scripts designed to help others follow along with the project and avoid manually typing commands line by line.
+
 ---
 
 ## 📖 Overview
