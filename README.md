@@ -3,15 +3,13 @@
 [![MIT License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)  
 [![GitHub issues](https://img.shields.io/github/issues/jduru213-1/suricata-wazuh-c2-detection-lab)](https://github.com/jduru213-1/suricata-wazuh-c2-detection-lab/issues)  
 [![GitHub stars](https://img.shields.io/github/stars/jduru213-1/suricata-wazuh-c2-detection-lab)](https://github.com/jduru213-1/suricata-wazuh-c2-detection-lab/stargazers)  
-
-Note: Assistance was provided by OpenAI's ChatGPT to develop automation scripts designed to help others follow along with the project and avoid manually typing commands line by line.
-
 ---
 
 ## 📖 Overview
 
 This repository contains automation scripts to help build a lab environment for simulating a phishing attack that delivers malicious C2 server traffic via Google Calendar, with detection and response powered by Wazuh and Suricata.
 
+*Note:* Assistance was provided by OpenAI's ChatGPT to develop automation scripts designed to help others follow along with the project and avoid manually typing commands line by line.
 ---
 
 ## ⚙️ Phase 1: VM Infrastructure Setup (Prerequisites)
